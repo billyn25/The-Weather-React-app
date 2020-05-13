@@ -1,13 +1,13 @@
 import React, {useState,useEffect} from "react"
 import './App.css';
-import Form from "./components/Form";
-import SearchContent from "./components/SearchContent";
-import PrincipalContent from "./components/PrincipalContent";
-import Footer from "./components/Footer";
+import Form from "./Components/Form";
+import SearchContent from "./Components/SearchContent";
+import PrincipalContent from "./Components/PrincipalContent";
+import Footer from "./Components/Footer";
 import {ContextApiId} from './Complementos/Context'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import FavoriteComponent from "./components/FavoriteComponent";
-import Navbar from "./components/Navbar";
+import FavoriteComponent from "./Components/FavoriteComponent";
+import Navbar from "./Components/Navbar";
 
 function IndexPage() {
     const [search, setSearch] = useState('');
