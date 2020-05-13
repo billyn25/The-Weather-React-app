@@ -14,7 +14,7 @@ function PrincipalContent() {
 
     let getData = async () => {
 
-        await axios.get(`http://api.openweathermap.org/data/2.5/group?id=3117735,3110044,3128760,2510409,2510911,3106672,3119841,3121424,3109718,3109256,6355632,3121070&units=metric&lang=es&appid=${apiKey}`)
+        await axios.get(`https://api.openweathermap.org/data/2.5/group?id=3117735,3110044,3128760,2510409,2510911,3106672,3119841,3121424,3109718,3109256,6355632,3121070&units=metric&lang=es&appid=${apiKey}`)
             .then(function (response) {
                 let {list} = response.data
                 setData(list)
