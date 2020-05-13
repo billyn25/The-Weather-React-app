@@ -23,7 +23,10 @@ li {
   font-weight: normal !important;
   list-style: none;
 }
-
+nav {
+  width: 100%;
+  overflow:hidden;
+}
 nav ul {
   padding-left: 55px !important;
 }
