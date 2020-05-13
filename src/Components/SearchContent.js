@@ -26,13 +26,13 @@ function SearchContent({datos}) {
             latitud = lat.toString().substr(0,5)
 
             console.log(location)
-            url = `http://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=${apiKey}&units=metric&lang=es`
+            url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=${apiKey}&units=metric&lang=es`
         } else {
 
             if (!isNaN(city)) {
-                url = `http://api.openweathermap.org/data/2.5/weather?zip=${city},${country}&appid=${apiKey}&units=metric&lang=es`
+                url = `https://api.openweathermap.org/data/2.5/weather?zip=${city},${country}&appid=${apiKey}&units=metric&lang=es`
             } else {
-                url = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}&units=metric&lang=es`
+                url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}&units=metric&lang=es`
             }
         }
 

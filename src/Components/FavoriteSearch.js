@@ -18,9 +18,9 @@ function FavoriteSearch({datos,indice}) {
 
         let url;
         if (id && id!=='') {
-            url =`http://api.openweathermap.org/data/2.5/weather?id=${id}&units=metric&lang=es&appid=${apiKey}`
+            url =`https://api.openweathermap.org/data/2.5/weather?id=${id}&units=metric&lang=es&appid=${apiKey}`
         } else {
-            url =`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}&units=metric&lang=es`
+            url =`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}&units=metric&lang=es`
         }
 
         await axios.get(url)

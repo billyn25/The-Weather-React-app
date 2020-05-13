@@ -33,9 +33,9 @@ export default function List({datos,countryCode,favoriteStatus,indice}) {
 
         let url;
         if (id && id!=='') {
-            url= `http://api.openweathermap.org/data/2.5/forecast?id=${id}&appid=${apiKey}&lang=es&units=metric&cnt=8`
+            url= `https://api.openweathermap.org/data/2.5/forecast?id=${id}&appid=${apiKey}&lang=es&units=metric&cnt=8`
         } else {
-            url= `http://api.openweathermap.org/data/2.5/forecast?q=${name},${countryCode}&appid=${apiKey}&lang=es&units=metric&cnt=8`
+            url= `https://api.openweathermap.org/data/2.5/forecast?q=${name},${countryCode}&appid=${apiKey}&lang=es&units=metric&cnt=8`
         }
 
         await axios.get(url)
