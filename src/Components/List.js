@@ -87,7 +87,7 @@ export default function List({datos,countryCode,favoriteStatus,indice}) {
                         </button>)}
                     </header>
                     <div className="d-flex justify-content-between align-items-center pr-3">
-                        <img src={`http://openweathermap.org/img/wn/${weather[0].icon}@2x.png`} alt="logo" width="120"
+                        <img src={`https://openweathermap.org/img/wn/${weather[0].icon}@2x.png`} alt="logo" width="120"
                              height="auto"/>
                         <p className="badge badge-danger p-2 text-white"><i
                             className="fa fa-thermometer-half"></i> {main.temp.toString().substring(0, main.temp.toString().indexOf("."))}°C </p>
@@ -110,7 +110,7 @@ export default function List({datos,countryCode,favoriteStatus,indice}) {
                             <ul className="d-flex flex-wrap">
                             {Object.keys(dataHour || {}).map((key,index) => (
                                     <li key={index} className="list d-flex flex-column border justify-content-center align-items-center">
-                                        <img src={`http://openweathermap.org/img/wn/${dataHour[key].weather[0].icon}@2x.png`} alt="logo" width="30"
+                                        <img src={`https://openweathermap.org/img/wn/${dataHour[key].weather[0].icon}@2x.png`} alt="logo" width="30"
                                          height="auto"/>
                                          <p className="text-dark mb-1">{`${moment(dataHour[key].dt *1000).format('H')}`}</p>
                                         <p className="text-dark mb-0 text-muted small">{dataHour[key].main.temp.toString().substring(0, dataHour[key].main.temp.toString().indexOf("."))}°</p>
