@@ -109,7 +109,7 @@ export default function Form({dataF}) {
                 </div>
                 <div className="form-group col-md-2 d-flex justify-content-center">
                     <button type="submit" className="pl-3 pr-3 btn lupa btn-danger w-75"><i className="fa fa-search"></i></button>
-                    <button type="button" className="ml-3 pl-3 pr-3 btn lupa btn-danger w-75" onClick={getLocation}><i className="fa fa-location-arrow"></i></button>
+                    <button type="button" className="ml-2 pl-3 pr-3 btn lupa btn-danger w-75" onClick={getLocation}><i className="fa fa-location-arrow"></i></button>
                 </div>
             </div>
         </form>
