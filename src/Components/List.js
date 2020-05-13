@@ -78,7 +78,7 @@ export default function List({datos,countryCode,favoriteStatus,indice}) {
                 <div className="card">
                     <header className="w-100 text-right">
                         {favoriteStatus!=='true' && (
-                        <button className={checkFav()?"btn-sm btn-warning m-0 pl-2 pr-2 pt-1 pb-1":"btn-light btn-sm m-0 pl-2 pr-2 pt-1 pb-1"} onClick={()=>favorite(name,sys.country,id)}>
+                        <button type="button" className={checkFav()?"btn-sm btn-warning m-0 pl-2 pr-2 pt-1 pb-1":"btn-link disabled btn-sm m-0 pl-2 pr-2 pt-1 pb-1"} onClick={()=>favorite(name,sys.country,id)}>
                             <i className="fa fa-star text-white"></i>
                         </button>)}
                         {favoriteStatus==='true' && (
