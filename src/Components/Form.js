@@ -7,7 +7,7 @@ const getSuggestions = value => {
     const inputLength = inputValue.length;
 
     return inputLength === 0 ? [] : countries.filter(lang =>
-        lang.name.toLowerCase().slice(0, inputLength) === inputValue
+        lang.code.toLowerCase().slice(0, inputLength) === inputValue
     );
 };
 
