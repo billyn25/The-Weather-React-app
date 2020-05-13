@@ -216,4 +216,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .mobile{
     padding: 10px
   }
+
+  .react-autosuggest__input {
+    border-radius: 0;
+  }
 }
