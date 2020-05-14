@@ -99,8 +99,8 @@ export default function List({datos,countryCode,favoriteStatus,indice}) {
                         <li className="list-group-item bg-light border text-dark font-weight-bold">{weather[0].description.charAt(0).toUpperCase() + weather[0].description.slice(1)},
                             <i className="fa fa-cloud ml-2 mr-1"></i>{clouds.all}%
                         </li>
-                        <li className="list-group-item bg-dark"><FontAwesomeIcon icon={faTemperatureLow}/> {main.temp_min.toString().substr(0, 2)}°C
-                            <FontAwesomeIcon icon={faTemperatureHigh} className="ml-3"/> {main.temp_max.toString().substr(0, 2)}°C
+                        <li className="list-group-item bg-dark"><FontAwesomeIcon icon={faTemperatureLow}/> {main.temp_min.toString().substr(0, main.temp_min.toString().includes(".")?main.temp_min.toString().indexOf("."):2)}°C
+                            <FontAwesomeIcon icon={faTemperatureHigh} className="ml-3"/> {main.temp_max.toString().substr(0, main.temp_max.toString().includes(".")?main.temp_max.toString().indexOf("."):2)}°C
                         </li>
                         <li className="list-group-item bg-dark"><FontAwesomeIcon
                             icon={faTint}/> {main.humidity}%<FontAwesomeIcon icon={faWind} className="ml-3"/> {wind.speed} m/s<FontAwesomeIcon
