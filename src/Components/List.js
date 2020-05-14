@@ -19,6 +19,8 @@ export default function List({datos,countryCode,favoriteStatus,indice}) {
     const [dataHour, setDataHour] = useState('');
     const {main,name,weather,clouds,sys,wind,id} = datos
 
+    console.log(name)
+
     useEffect(() => {
             setLoad(true)
             setTimeout(() => {
@@ -66,7 +68,7 @@ export default function List({datos,countryCode,favoriteStatus,indice}) {
     let checkFav = () => {
 
         let arrayFav = JSON.parse(localStorage.getItem('id')) || []
-        const found = arrayFav.some(el => el.city === name);
+        const found = arrayFav.some(el => el.city.toLowerCase() === name.toLowerCase());
         if (!found) {
             return true
         }
